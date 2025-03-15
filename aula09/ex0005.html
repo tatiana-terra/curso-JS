@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros Passos com DOM</title>
+    <style>
+       body {
+           background-color: rgb(66, 149, 226);
+           color: white;
+           font: normal 18pt Arial;
+       } 
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id = 'msg'>Clique em mim</div>
+    <script>
+        /*var p1 = window.document.getElementsByTagName('p')[0]//Esse 0 eu escolho qual paragrafo vou pegar. O 0 é o primeiro paragrafo  
+        window.document.write('Está escrito assim:'+ p1.innerText)//innerText-oque esta dentro do primeiro paragrafo
+        */
+        var d = window.document.querySelector('div#msg')
+        /*toda div é representada por uma #, toda classe é representada
+        por um pontinho, Quando é id é # quando é class é
+        pontinho
+        */
+       d.style.background = 'blue'
+    </script>
+</body>
+</html>
