@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="pt-Br">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando Números</title>
     <style>
@@ -22,12 +22,16 @@
     <input type="number" name="txtn1" id="txtn1"> +
     <input type="number" name="txtn2" id="txtn2">
     <input type="button" value="Somar" onclick="somar()">
-    <div id="res">Resultado</div>
+    <div id="res">Resultado</div><!--Montei a interface básica no html, que são as caixas e os botões-->
     <script>
-       function somar() {
+       function somar() {/*Tenho que saber quem é n1 e n2;
+        criei dois objetos, tn1(caixa de texto n1) e tn2( caixa de texto n2) não o valor , só a caixa ( o var res tb é a a mesma coisa);
+        faz a ligação com as caixas com o getElementById;*/
             var tn1 = window.document.getElementById('txtn1') 
             var tn2 = window.document.querySelector('input#txtn2')
             var res = window.document.getElementById('res')
+            /*Crio uma var para o valor de n1 e uma var para o valor de n2, isso pq qdo vem de uma caixa de texto, ele é texto;
+            ai eu coloco Number( tn1.value)- que é o valor que ta dentro mdessa caixa de texto n1 */
             var n1 = Number(tn1.value) 
             var n2 = Number(tn2.value)
             var s = n1 + n2
