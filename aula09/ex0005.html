@@ -16,17 +16,17 @@
 <body>
     <h1>Iniciando estudos DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
     <div id = 'msg'>Clique em mim</div>
     <script>
-        /*var p1 = window.document.getElementsByTagName('p')[0]//Esse 0 eu escolho qual paragrafo vou pegar. O 0 é o primeiro paragrafo  
-        window.document.write('Está escrito assim:'+ p1.innerText)//innerText-oque esta dentro do primeiro paragrafo
+        /*var p1 = window.document.getElementsByTagName('p')[0]//Esse 0 eu escolho qual paragrafo vou pegar. O 0 é o primeiro paragrafo.  
+        window.document.write('Está escrito assim:'+ p1.innerText)
+        -innerText-oque esta dentro do primeiro paragrafo
         */
+       /*var d = window.document.getElementById('msg')*/
         var d = window.document.querySelector('div#msg')
-        /*toda div é representada por uma #, toda classe é representada
-        por um pontinho, Quando é id é # quando é class é
-        pontinho
-        */
+        /*toda div é representada por uma #, toda classe é representada por um pontinho(.). 
+        Quando é id é # quando é class é (.)*/
        d.style.background = 'blue'
     </script>
 </body>
