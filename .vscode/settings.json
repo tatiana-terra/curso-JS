@@ -1,3 +1,4 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "curso-JS"
+    "liveServer.settings.multiRootWorkspaceName": "curso-JS",
+    "editor.wordWrap": "on"
 }
